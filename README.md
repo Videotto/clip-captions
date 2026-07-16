@@ -18,6 +18,8 @@ When you're done, tell the interviewer:
 
 ## Getting started
 
+Requires Node 18.18+ (Node 20 recommended).
+
 ```bash
 npm install
 npm test                                        # run the unit tests

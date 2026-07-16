@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "description": "Generates SRT caption files from WhisperX word-level transcripts",
+  "engines": {
+    "node": ">=18.18"
+  },
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
