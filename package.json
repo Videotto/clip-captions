@@ -1,0 +1,18 @@
+{
+  "name": "clip-captions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Generates SRT caption files from WhisperX word-level transcripts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "captions": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^3.0.0"
+  }
+}
