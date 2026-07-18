@@ -16,6 +16,33 @@ When you're done, tell the interviewer:
 1. what you changed and why, and
 2. whether you would now merge it — and if not, what's still missing.
 
+## Submitting your work
+
+Before you submit, add a short `NOTES.md` at the repo root: what you changed,
+what you'd still do with more time, and whether you would merge.
+
+Then push your work to a **new private repository of your own** and invite the
+interviewer as a collaborator:
+
+```bash
+git add -A && git commit -m "submission"
+gh repo create <your-username>/clip-captions-submission --private --source . --push
+```
+
+Then invite the interviewer's GitHub account to that repo (Settings →
+Collaborators), or share the private repo link.
+
+> **Please do NOT "Fork" this repo.** A fork of a public repository is itself
+> public and would expose your solution to other candidates. Use a new
+> **private** repo as above.
+
+If you can't push (not logged in to `gh` on this machine), hand the
+interviewer a patch file instead:
+
+```bash
+git add -A && git diff origin/main > yourname.patch
+```
+
 ## Getting started
 
 Requires Node 18.18+ (Node 20 recommended).
